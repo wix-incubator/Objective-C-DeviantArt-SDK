@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F7E1349FB1B48D3B624C6A4 /* libPods-deviantART SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B909B3E836034AE0942C95F9 /* libPods-deviantART SDK.a */; };
+		93346957183AEC9700B1185A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93346956183AEC9700B1185A /* Foundation.framework */; };
+		93346959183AEC9700B1185A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93346958183AEC9700B1185A /* CoreGraphics.framework */; };
+		9334695B183AEC9700B1185A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9334695A183AEC9700B1185A /* UIKit.framework */; };
+		93346961183AEC9700B1185A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9334695F183AEC9700B1185A /* InfoPlist.strings */; };
+		93346963183AEC9700B1185A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93346962183AEC9700B1185A /* main.m */; };
+		93346967183AEC9700B1185A /* DVNTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93346966183AEC9700B1185A /* DVNTAppDelegate.m */; };
+		9334696A183AEC9700B1185A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93346968183AEC9700B1185A /* Main.storyboard */; };
+		9334696D183AEC9700B1185A /* DVNTMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334696C183AEC9700B1185A /* DVNTMasterViewController.m */; };
+		93346972183AEC9700B1185A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93346971183AEC9700B1185A /* Images.xcassets */; };
+		93346979183AEC9700B1185A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93346978183AEC9700B1185A /* XCTest.framework */; };
+		9334697A183AEC9700B1185A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93346956183AEC9700B1185A /* Foundation.framework */; };
+		9334697B183AEC9700B1185A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9334695A183AEC9700B1185A /* UIKit.framework */; };
+		93346983183AEC9700B1185A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93346981183AEC9700B1185A /* InfoPlist.strings */; };
+		93346985183AEC9700B1185A /* deviantART_SDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93346984183AEC9700B1185A /* deviantART_SDKTests.m */; };
+		9334699B183AECC400B1185A /* AFOAuthCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 93346990183AECC300B1185A /* AFOAuthCredential.m */; };
+		9334699C183AECC400B1185A /* DVNTAPIAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93346992183AECC400B1185A /* DVNTAPIAuthViewController.m */; };
+		9334699E183AECC400B1185A /* DVNTAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 93346996183AECC400B1185A /* DVNTAPIClient.m */; };
+		933469A0183AECC400B1185A /* DVNTJSONResponseSerializerWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334699A183AECC400B1185A /* DVNTJSONResponseSerializerWithData.m */; };
+		93544C3F1885D97400512946 /* DVNTAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 93544C3E1885D97400512946 /* DVNTAPIRequest.m */; };
+		938B286E188722F70082D0C5 /* DVNTAPIMacAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B286D188722F70082D0C5 /* DVNTAPIMacAuthViewController.m */; };
+		93AC01221884AA870098AE47 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AC01211884AA870098AE47 /* test.png */; };
+		FAEEF7209E4C4FCEBDAF34BC /* libPods-deviantART SDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD04118C60841FB9C48A6EB /* libPods-deviantART SDKTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9334697C183AEC9700B1185A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9334694B183AEC9700B1185A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93346952183AEC9700B1185A;
+			remoteInfo = "deviantART SDK";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C650F72309B42C9A5481F23 /* Pods-deviantART SDKTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deviantART SDKTests.xcconfig"; path = "Pods/Pods-deviantART SDKTests.xcconfig"; sourceTree = "<group>"; };
+		93346953183AEC9700B1185A /* deviantART SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "deviantART SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93346956183AEC9700B1185A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		93346958183AEC9700B1185A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9334695A183AEC9700B1185A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9334695E183AEC9700B1185A /* deviantART SDK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "deviantART SDK-Info.plist"; sourceTree = "<group>"; };
+		93346960183AEC9700B1185A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93346962183AEC9700B1185A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93346964183AEC9700B1185A /* deviantART SDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "deviantART SDK-Prefix.pch"; sourceTree = "<group>"; };
+		93346965183AEC9700B1185A /* DVNTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVNTAppDelegate.h; sourceTree = "<group>"; };
+		93346966183AEC9700B1185A /* DVNTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVNTAppDelegate.m; sourceTree = "<group>"; };
+		93346969183AEC9700B1185A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9334696B183AEC9700B1185A /* DVNTMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVNTMasterViewController.h; sourceTree = "<group>"; };
+		9334696C183AEC9700B1185A /* DVNTMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVNTMasterViewController.m; sourceTree = "<group>"; };
+		93346971183AEC9700B1185A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		93346977183AEC9700B1185A /* deviantART SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "deviantART SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93346978183AEC9700B1185A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		93346980183AEC9700B1185A /* deviantART SDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "deviantART SDKTests-Info.plist"; sourceTree = "<group>"; };
+		93346982183AEC9700B1185A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93346984183AEC9700B1185A /* deviantART_SDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = deviantART_SDKTests.m; sourceTree = "<group>"; };
+		9334698F183AECC300B1185A /* AFOAuthCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOAuthCredential.h; sourceTree = "<group>"; };
+		93346990183AECC300B1185A /* AFOAuthCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOAuthCredential.m; sourceTree = "<group>"; };
+		93346991183AECC300B1185A /* DVNTAPIAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVNTAPIAuthViewController.h; sourceTree = "<group>"; };
+		93346992183AECC400B1185A /* DVNTAPIAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVNTAPIAuthViewController.m; sourceTree = "<group>"; };
+		93346995183AECC400B1185A /* DVNTAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVNTAPIClient.h; sourceTree = "<group>"; };
+		93346996183AECC400B1185A /* DVNTAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVNTAPIClient.m; sourceTree = "<group>"; };
+		93346999183AECC400B1185A /* DVNTJSONResponseSerializerWithData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVNTJSONResponseSerializerWithData.h; sourceTree = "<group>"; };
+		9334699A183AECC400B1185A /* DVNTJSONResponseSerializerWithData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVNTJSONResponseSerializerWithData.m; sourceTree = "<group>"; };
+		93544C3D1885D97400512946 /* DVNTAPIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DVNTAPIRequest.h; sourceTree = "<group>"; };
+		93544C3E1885D97400512946 /* DVNTAPIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DVNTAPIRequest.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		938B286C188722F70082D0C5 /* DVNTAPIMacAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVNTAPIMacAuthViewController.h; sourceTree = "<group>"; };
+		938B286D188722F70082D0C5 /* DVNTAPIMacAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVNTAPIMacAuthViewController.m; sourceTree = "<group>"; };
+		93AC01211884AA870098AE47 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		93C7E1F21846C64D0020B86A /* DVNTAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVNTAPI.h; sourceTree = "<group>"; };
+		B909B3E836034AE0942C95F9 /* libPods-deviantART SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-deviantART SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDD04118C60841FB9C48A6EB /* libPods-deviantART SDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-deviantART SDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D94D11D13B3A4D51B042D848 /* Pods-deviantART SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deviantART SDK.xcconfig"; path = "Pods/Pods-deviantART SDK.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93346950183AEC9700B1185A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93346959183AEC9700B1185A /* CoreGraphics.framework in Frameworks */,
+				9334695B183AEC9700B1185A /* UIKit.framework in Frameworks */,
+				93346957183AEC9700B1185A /* Foundation.framework in Frameworks */,
+				3F7E1349FB1B48D3B624C6A4 /* libPods-deviantART SDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93346974183AEC9700B1185A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93346979183AEC9700B1185A /* XCTest.framework in Frameworks */,
+				9334697B183AEC9700B1185A /* UIKit.framework in Frameworks */,
+				9334697A183AEC9700B1185A /* Foundation.framework in Frameworks */,
+				FAEEF7209E4C4FCEBDAF34BC /* libPods-deviantART SDKTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9334694A183AEC9700B1185A = {
+			isa = PBXGroup;
+			children = (
+				9334695C183AEC9700B1185A /* deviantART SDK */,
+				9334697E183AEC9700B1185A /* deviantART SDKTests */,
+				93346955183AEC9700B1185A /* Frameworks */,
+				93346954183AEC9700B1185A /* Products */,
+				D94D11D13B3A4D51B042D848 /* Pods-deviantART SDK.xcconfig */,
+				1C650F72309B42C9A5481F23 /* Pods-deviantART SDKTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		93346954183AEC9700B1185A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93346953183AEC9700B1185A /* deviantART SDK.app */,
+				93346977183AEC9700B1185A /* deviantART SDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93346955183AEC9700B1185A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93346956183AEC9700B1185A /* Foundation.framework */,
+				93346958183AEC9700B1185A /* CoreGraphics.framework */,
+				9334695A183AEC9700B1185A /* UIKit.framework */,
+				93346978183AEC9700B1185A /* XCTest.framework */,
+				B909B3E836034AE0942C95F9 /* libPods-deviantART SDK.a */,
+				CDD04118C60841FB9C48A6EB /* libPods-deviantART SDKTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9334695C183AEC9700B1185A /* deviantART SDK */ = {
+			isa = PBXGroup;
+			children = (
+				9334698E183AECC300B1185A /* DVNTAPI */,
+				93346965183AEC9700B1185A /* DVNTAppDelegate.h */,
+				93346966183AEC9700B1185A /* DVNTAppDelegate.m */,
+				93346968183AEC9700B1185A /* Main.storyboard */,
+				9334696B183AEC9700B1185A /* DVNTMasterViewController.h */,
+				9334696C183AEC9700B1185A /* DVNTMasterViewController.m */,
+				93346971183AEC9700B1185A /* Images.xcassets */,
+				93AC01211884AA870098AE47 /* test.png */,
+				9334695D183AEC9700B1185A /* Supporting Files */,
+			);
+			path = "deviantART SDK";
+			sourceTree = "<group>";
+		};
+		9334695D183AEC9700B1185A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9334695E183AEC9700B1185A /* deviantART SDK-Info.plist */,
+				9334695F183AEC9700B1185A /* InfoPlist.strings */,
+				93346962183AEC9700B1185A /* main.m */,
+				93346964183AEC9700B1185A /* deviantART SDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9334697E183AEC9700B1185A /* deviantART SDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				93346984183AEC9700B1185A /* deviantART_SDKTests.m */,
+				9334697F183AEC9700B1185A /* Supporting Files */,
+			);
+			path = "deviantART SDKTests";
+			sourceTree = "<group>";
+		};
+		9334697F183AEC9700B1185A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93346980183AEC9700B1185A /* deviantART SDKTests-Info.plist */,
+				93346981183AEC9700B1185A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9334698E183AECC300B1185A /* DVNTAPI */ = {
+			isa = PBXGroup;
+			children = (
+				9334698F183AECC300B1185A /* AFOAuthCredential.h */,
+				93346990183AECC300B1185A /* AFOAuthCredential.m */,
+				93346991183AECC300B1185A /* DVNTAPIAuthViewController.h */,
+				93346992183AECC400B1185A /* DVNTAPIAuthViewController.m */,
+				938B286C188722F70082D0C5 /* DVNTAPIMacAuthViewController.h */,
+				938B286D188722F70082D0C5 /* DVNTAPIMacAuthViewController.m */,
+				93346995183AECC400B1185A /* DVNTAPIClient.h */,
+				93346996183AECC400B1185A /* DVNTAPIClient.m */,
+				93544C3D1885D97400512946 /* DVNTAPIRequest.h */,
+				93544C3E1885D97400512946 /* DVNTAPIRequest.m */,
+				93346999183AECC400B1185A /* DVNTJSONResponseSerializerWithData.h */,
+				9334699A183AECC400B1185A /* DVNTJSONResponseSerializerWithData.m */,
+				93C7E1F21846C64D0020B86A /* DVNTAPI.h */,
+			);
+			path = DVNTAPI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93346952183AEC9700B1185A /* deviantART SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93346988183AEC9700B1185A /* Build configuration list for PBXNativeTarget "deviantART SDK" */;
+			buildPhases = (
+				E4569F0D655C48309CDB222E /* Check Pods Manifest.lock */,
+				9334694F183AEC9700B1185A /* Sources */,
+				93346950183AEC9700B1185A /* Frameworks */,
+				93346951183AEC9700B1185A /* Resources */,
+				9BE800BD2280406E9F7670B2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "deviantART SDK";
+			productName = "deviantART SDK";
+			productReference = 93346953183AEC9700B1185A /* deviantART SDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93346976183AEC9700B1185A /* deviantART SDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9334698B183AEC9700B1185A /* Build configuration list for PBXNativeTarget "deviantART SDKTests" */;
+			buildPhases = (
+				CD6FEB7997CD40379EB8D826 /* Check Pods Manifest.lock */,
+				93346973183AEC9700B1185A /* Sources */,
+				93346974183AEC9700B1185A /* Frameworks */,
+				93346975183AEC9700B1185A /* Resources */,
+				0F9E705CEF7543BDB5278A58 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9334697D183AEC9700B1185A /* PBXTargetDependency */,
+			);
+			name = "deviantART SDKTests";
+			productName = "deviantART SDKTests";
+			productReference = 93346977183AEC9700B1185A /* deviantART SDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9334694B183AEC9700B1185A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DVNT;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = deviantART;
+				TargetAttributes = {
+					93346952183AEC9700B1185A = {
+						DevelopmentTeam = GGA3LNCCWM;
+					};
+					93346976183AEC9700B1185A = {
+						TestTargetID = 93346952183AEC9700B1185A;
+					};
+				};
+			};
+			buildConfigurationList = 9334694E183AEC9700B1185A /* Build configuration list for PBXProject "deviantART SDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9334694A183AEC9700B1185A;
+			productRefGroup = 93346954183AEC9700B1185A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93346952183AEC9700B1185A /* deviantART SDK */,
+				93346976183AEC9700B1185A /* deviantART SDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93346951183AEC9700B1185A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93346972183AEC9700B1185A /* Images.xcassets in Resources */,
+				93346961183AEC9700B1185A /* InfoPlist.strings in Resources */,
+				9334696A183AEC9700B1185A /* Main.storyboard in Resources */,
+				93AC01221884AA870098AE47 /* test.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93346975183AEC9700B1185A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93346983183AEC9700B1185A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F9E705CEF7543BDB5278A58 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-deviantART SDKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BE800BD2280406E9F7670B2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-deviantART SDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD6FEB7997CD40379EB8D826 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E4569F0D655C48309CDB222E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9334694F183AEC9700B1185A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9334699C183AECC400B1185A /* DVNTAPIAuthViewController.m in Sources */,
+				93544C3F1885D97400512946 /* DVNTAPIRequest.m in Sources */,
+				933469A0183AECC400B1185A /* DVNTJSONResponseSerializerWithData.m in Sources */,
+				93346963183AEC9700B1185A /* main.m in Sources */,
+				93346967183AEC9700B1185A /* DVNTAppDelegate.m in Sources */,
+				9334699B183AECC400B1185A /* AFOAuthCredential.m in Sources */,
+				9334699E183AECC400B1185A /* DVNTAPIClient.m in Sources */,
+				9334696D183AEC9700B1185A /* DVNTMasterViewController.m in Sources */,
+				938B286E188722F70082D0C5 /* DVNTAPIMacAuthViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93346973183AEC9700B1185A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93346985183AEC9700B1185A /* deviantART_SDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9334697D183AEC9700B1185A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93346952183AEC9700B1185A /* deviantART SDK */;
+			targetProxy = 9334697C183AEC9700B1185A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9334695F183AEC9700B1185A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93346960183AEC9700B1185A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		93346968183AEC9700B1185A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93346969183AEC9700B1185A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93346981183AEC9700B1185A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93346982183AEC9700B1185A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93346986183AEC9700B1185A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		93346987183AEC9700B1185A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93346989183AEC9700B1185A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D94D11D13B3A4D51B042D848 /* Pods-deviantART SDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "deviantART SDK/deviantART SDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				INFOPLIST_FILE = "deviantART SDK/deviantART SDK-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9334698A183AEC9700B1185A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D94D11D13B3A4D51B042D848 /* Pods-deviantART SDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "deviantART SDK/deviantART SDK-Prefix.pch";
+				INFOPLIST_FILE = "deviantART SDK/deviantART SDK-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9334698C183AEC9700B1185A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C650F72309B42C9A5481F23 /* Pods-deviantART SDKTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/deviantART SDK.app/deviantART SDK";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "deviantART SDK/deviantART SDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "deviantART SDKTests/deviantART SDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9334698D183AEC9700B1185A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C650F72309B42C9A5481F23 /* Pods-deviantART SDKTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/deviantART SDK.app/deviantART SDK";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "deviantART SDK/deviantART SDK-Prefix.pch";
+				INFOPLIST_FILE = "deviantART SDKTests/deviantART SDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9334694E183AEC9700B1185A /* Build configuration list for PBXProject "deviantART SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93346986183AEC9700B1185A /* Debug */,
+				93346987183AEC9700B1185A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93346988183AEC9700B1185A /* Build configuration list for PBXNativeTarget "deviantART SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93346989183AEC9700B1185A /* Debug */,
+				9334698A183AEC9700B1185A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9334698B183AEC9700B1185A /* Build configuration list for PBXNativeTarget "deviantART SDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9334698C183AEC9700B1185A /* Debug */,
+				9334698D183AEC9700B1185A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9334694B183AEC9700B1185A /* Project object */;
+}
