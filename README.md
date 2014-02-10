@@ -3,7 +3,7 @@ deviantART SDK is a library that makes it easier for developers to create and de
 
 ## How To Get Started
 
-* Download the SDK and try the included example iOS app or download the example Mac app.
+* Download the SDK and try the included example iOS app.
 * Checkout and read the documentation of the code included for a deeper look at what is available to use.
 * Questions? Post an issue!
 
