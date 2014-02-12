@@ -237,15 +237,20 @@ NSString * const DVNTClientRedirectURIString = @"https://www.deviantart.com/oaut
 }
 
 - (void)rebuildTask:(NSDictionary *)task {
-    if([task[@"method"] isEqualToString:@"GET"]) {
-        [self GET:task[@"URLString"] parameters:task[@"parameters"] success:task[@"success"] failure:task[@"failure"]];
-    } else if([task[@"method"] isEqualToString:@"POST"])  {
-        [self POST:task[@"URLString"] parameters:task[@"parameters"] success:task[@"success"] failure:task[@"failure"]];
-    } else if([task[@"method"] isEqualToString:@"POST-Data"]) {
-        NSMutableDictionary *parameters = task[@"parameters"];
+    NSString *method = task[@"method"];
+    NSString *URLString = task[@"URLString"];
+    NSMutableDictionary *parameters = task[@"parameters"];
+    id successBlock = task[@"success"];
+    id failureBlock = task[@"failure"];
+    
+    if([method isEqualToString:@"GET"]) {
+        [self GET:URLString parameters:parameters success:successBlock failure:failureBlock];
+    } else if([method isEqualToString:@"POST"])  {
+        [self POST:URLString parameters:parameters success:successBlock failure:failureBlock];
+    } else if([method isEqualToString:@"POST-Data"]) {
         id block = parameters[@"dataBlock"];
         [parameters removeObjectForKey:@"dataBlock"];
-        [self POST:task[@"URLString"] parameters:parameters constructingBodyWithBlock:block success:task[@"success"] failure:task[@"failure"]];
+        [self POST:URLString parameters:parameters constructingBodyWithBlock:block success:successBlock failure:failureBlock];
     }
 }
 
