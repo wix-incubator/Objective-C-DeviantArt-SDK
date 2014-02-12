@@ -128,14 +128,14 @@ NSString * const DVNTClientRedirectURIString = @"https://www.deviantart.com/oaut
 // Basic GET go to _dataSessionManager
 + (NSURLSessionDataTask *)GET:(NSString *)URLString parameters:(NSDictionary *)parameters success:(void (^)(NSURLSessionDataTask *, id))success failure:(void (^)(NSURLSessionDataTask *, NSError *))failure {
     NSURLSessionDataTask *task = [[self sharedClient] GET:URLString parameters:parameters success:success failure:^(NSURLSessionDataTask *task, NSError *error) {
-        if(![self isExpired] && ![self hasQueuedTasks]) {
+        if(!self.isExpired && ![self hasQueuedTasks]) {
             if(failure) {
                 failure(task, error);
             }
         }
     }];
     
-    if([self isExpired]) {
+    if(self.isExpired) {
         [task cancel];
         [[self sharedClient] addTaskToQueueWithURLString:URLString method:@"GET" parameters:parameters success:[success copy] failure:[failure copy]];
         
@@ -161,14 +161,14 @@ NSString * const DVNTClientRedirectURIString = @"https://www.deviantart.com/oaut
 // POST go to _dataSessionManager
 + (NSURLSessionDataTask *)POST:(NSString *)URLString parameters:(NSDictionary *)parameters success:(void (^)(NSURLSessionDataTask *, id))success failure:(void (^)(NSURLSessionDataTask *, NSError *))failure {
     NSURLSessionDataTask *task = [[self sharedClient] POST:URLString parameters:parameters success:success failure:^(NSURLSessionDataTask *task, NSError *error) {
-        if(![self isExpired] && ![self hasQueuedTasks]) {
+        if(!self.isExpired && ![self hasQueuedTasks]) {
             if(failure) {
                 failure(task, error);
             }
         }
     }];
     
-    if([self isExpired]) {
+    if(self.isExpired) {
         [task cancel];
         [[self sharedClient] addTaskToQueueWithURLString:URLString method:@"POST" parameters:parameters success:[success copy] failure:[failure copy]];
         
@@ -194,14 +194,14 @@ NSString * const DVNTClientRedirectURIString = @"https://www.deviantart.com/oaut
 // POST multipart
 + (NSURLSessionDataTask *)POST:(NSString *)URLString parameters:(NSDictionary *)parameters constructingBodyWithBlock:(void ( ^ ) ( id<AFMultipartFormData> formData ))block success:(void ( ^ ) ( NSURLSessionDataTask *task , id responseObject ))success failure:(void ( ^ ) ( NSURLSessionDataTask *task , NSError *error ))failure {
     NSURLSessionDataTask *task = [[self sharedClient] POST:URLString parameters:parameters constructingBodyWithBlock:block success:success failure:^(NSURLSessionDataTask *task, NSError *error) {
-        if(![self isExpired] && ![self hasQueuedTasks]) {
+        if(!self.isExpired && ![self hasQueuedTasks]) {
             if(failure) {
                 failure(task, error);
             }
         }
     }];
     
-    if([self isExpired]) {
+    if(self.isExpired) {
         [task cancel];
         NSMutableDictionary *mutableParameters  = [NSMutableDictionary dictionaryWithDictionary:parameters];
         [mutableParameters setObject:[block copy] forKey:@"dataBlock"];
@@ -275,8 +275,7 @@ NSString * const DVNTClientRedirectURIString = @"https://www.deviantart.com/oaut
     [self setAuthorizationHeaderWithToken:[credential accessToken] ofType:[credential tokenType]];
 }
 
-- (void)setAuthorizationHeaderWithToken:(NSString *)token
-                                 ofType:(NSString *)type {
+- (void)setAuthorizationHeaderWithToken:(NSString *)token ofType:(NSString *)type {
     // See http://tools.ietf.org/html/rfc6749#section-7.1
     if ([[type lowercaseString] isEqualToString:@"bearer"]) {
         // Set both session managers to have the same token as their Bearer HTTP header field.
