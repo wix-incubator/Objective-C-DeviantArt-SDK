@@ -10,7 +10,6 @@
 #import "DVNTAPIClient.h"
 @implementation DVNTAPIRequest
 
-
 #pragma mark - Placebo
 
 + (NSURLSessionDataTask *)placeboWithSuccess:(void (^)(NSURLSessionDataTask *, id))success failure:(void (^)(NSURLSessionDataTask *, NSError *))failure {
@@ -154,22 +153,27 @@
 + (BOOL)checkPlaceboStatus {
     __block BOOL isValid = NO;
     
-    // Using semaphores to lock up the system while we run this task. Should be a very fast call in all circumstances.
-    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
-    [self placeboWithSuccess:^(NSURLSessionDataTask *task, id JSON) {
-        if([JSON[@"status"] isEqualToString:@"success"]) {
-            isValid = YES;
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"lastPlaceboDate"] && [[[NSUserDefaults standardUserDefaults] objectForKey:@"lastPlaceboDate"] timeIntervalSinceNow] < -120) {
+        isValid = YES;
+    } else {
+        // Using semaphores to lock up the system while we run this task. Should be a very fast call in all circumstances.
+        dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+        [self placeboWithSuccess:^(NSURLSessionDataTask *task, id JSON) {
+            if([JSON[@"status"] isEqualToString:@"success"]) {
+                isValid = YES;
+            }
+            
+            dispatch_semaphore_signal(semaphore);
+        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            
+            dispatch_semaphore_signal(semaphore);
+        }];
+        
+        while (dispatch_semaphore_wait(semaphore, DISPATCH_TIME_NOW)) {
+            [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.0]];
         }
         
-        dispatch_semaphore_signal(semaphore);
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        
-        dispatch_semaphore_signal(semaphore);
-    }];
-    
-    while (dispatch_semaphore_wait(semaphore, DISPATCH_TIME_NOW)) {
-        [[NSRunLoop currentRunLoop]
-         runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0]];
+        [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:@"lastPlaceboDate"];
     }
     
     return isValid;
