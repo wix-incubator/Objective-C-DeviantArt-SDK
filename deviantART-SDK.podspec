@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "deviantART-SDK"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "The Objective-C deviantART SDK is a library to allow easy integration with the deviantART API in your apps."
   s.homepage     = "http://deviantart.com/developers"
   s.license = 'BSD'
