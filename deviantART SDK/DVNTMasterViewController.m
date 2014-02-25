@@ -230,7 +230,7 @@
     self.authenticating = YES;
     
     // Check if App has authenticated user at least once and has credentials, if not show the UI, will also refresh token if needed here
-    [DVNTAPIClient authenticateFromController:self scope:@"basic daprivate" completionHandler:^(NSError *error) {
+    [DVNTAPIClient authenticateFromController:self scope:@"basic" completionHandler:^(NSError *error) {
         self.authenticating = NO;
         
         self.navigationItem.leftBarButtonItem.enabled = YES;

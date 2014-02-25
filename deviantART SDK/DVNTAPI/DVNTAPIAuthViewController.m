@@ -90,7 +90,10 @@
 
 // This is where we grab the authorization code
 - (BOOL)webView:(UIWebView *)aWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-    if([request.URL.relativePath isEqualToString:@"/oauth2/redirect"]) {
+    NSString *URLString = [request.URL.absoluteString componentsSeparatedByString:@"?"][0];
+    
+    if([URLString isEqualToString:[DVNTAPIClient sharedClient].redirectURI]) {
+        
         NSDictionary *parameters = [self queryParametersForURL:request.URL];
         
         NSString *code = parameters[@"code"];

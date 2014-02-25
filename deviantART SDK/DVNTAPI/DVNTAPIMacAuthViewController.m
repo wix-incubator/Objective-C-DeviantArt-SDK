@@ -57,20 +57,11 @@
     return self;
 }
 
-- (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame {
-    
-}
-- (void)webView:(WebView *)sender didFailLoadWithError:(NSError *)error forFrame:(WebFrame *)frame {
-    
-}
-
-- (void)webView:(WebView *)webView
-decidePolicyForNavigationAction:(NSDictionary *)actionInformation
-       request:(NSURLRequest *)request
-         frame:(WebFrame *)frame
-decisionListener:(id < WebPolicyDecisionListener >)listener
+- (void)webView:(WebView *)webView decidePolicyForNavigationAction:(NSDictionary *)actionInformation request:(NSURLRequest *)request frame:(WebFrame *)frame decisionListener:(id < WebPolicyDecisionListener >)listener
 {
-    if([request.URL.relativePath isEqualToString:@"/oauth2/redirect"]) {
+    NSString *URLString = [request.URL.absoluteString componentsSeparatedByString:@"?"][0];
+    
+    if([URLString isEqualToString:[DVNTAPIClient sharedClient].redirectURI]) {
         NSDictionary *parameters = [self queryParametersForURL:request.URL];
         
         NSString *code = parameters[@"code"];
