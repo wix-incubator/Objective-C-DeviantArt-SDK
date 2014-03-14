@@ -214,13 +214,6 @@
     }
 }
 
-- (void)logout {
-    // unlink user, just deletes the credentials right now
-    [DVNTAPIClient unauthenticate];
-    
-    [self authenticate];
-}
-
 - (void)authenticate {
     // T12243 we're already trying to authenticate the user, no need to prompt again until completionHandler has run
     if (self.authenticating) {

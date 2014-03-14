@@ -2,10 +2,10 @@
 platform :ios, "7.0"
 
 target "deviantART SDK" do
-    pod "AFNetworking", "~> 2.1"
+    pod "AFNetworking", "~> 2.2"
 end
 
 target "deviantART SDKTests" do
-    pod "AFNetworking", "~> 2.1"
+    pod "AFNetworking", "~> 2.2"
 end
 

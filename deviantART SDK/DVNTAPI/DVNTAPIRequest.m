@@ -225,7 +225,10 @@
 
 // renames a folder
 + (NSURLSessionDataTask *)renameFolder:(NSString *)folderID folderName:(NSString *)folderName success:(void (^)(NSURLSessionDataTask *, id))success failure:(void (^)(NSURLSessionDataTask *, NSError *))failure {
-    return [DVNTAPIClient POST:@"/api/oauth2/stash/folder" parameters:@{@"folderid": folderID, @"folder": folderName} success:success failure:failure];
+    
+    // have to add perecent encoding here to ensure it works correctly.
+    folderName = [folderName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    return [DVNTAPIClient POST:@"/api/oauth2/stash/folder" parameters:@{@"folderid": folderID, @"folder": [folderName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]} success:success failure:failure];
 }
 
 // Retrieves user's available and total Sta.sh space
