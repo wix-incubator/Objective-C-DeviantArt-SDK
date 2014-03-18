@@ -15,7 +15,7 @@ CocoaPods is a dependency manager for Objective-C, which automates and simplifie
 
 ```ruby
 platform :ios, '7.0'
-pod "deviantART-SDK", "~> 1.0.1"
+pod "deviantART-SDK", "~> 1.0"
 ```
 
 #### Setup
