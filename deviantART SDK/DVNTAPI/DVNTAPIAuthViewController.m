@@ -101,7 +101,7 @@
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         
         // now we have the code we can auth and dismiss this view
-                    [DVNTAPIClient authenticateUsingOAuthWithPath:@"/oauth2/token" code:code redirectURI:DVNTClientRedirectURIString success:^(AFOAuthCredential *credential) {
+                    [DVNTAPIClient authenticateUsingOAuthWithPath:@"/oauth2/token" code:code redirectURI:[DVNTAPIClient sharedClient].redirectURI success:^(AFOAuthCredential *credential) {
                 [DVNTAPIClient storeCredential:credential];
                 [self dismissViewControllerAnimated:YES completion:^{
                     self.completionBlock(nil);
